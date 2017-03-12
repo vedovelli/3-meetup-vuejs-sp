@@ -1,4 +1,4 @@
-# moip
+# Aplicação de suporte à apresentação no 3º Meetup Vue.js SP
 
 > A Vue.js project
 
