@@ -5,13 +5,17 @@
         data() {
           return {
             category: '',
-            categories: [],
           }
+        },
+        computed: {
+            categories () {
+                return this.$store.state.Categories.list
+            }
         },
         methods: {
             add() {
                 if (this.category !== '') {
-                    this.categories.push(this.category)
+                    this.$store.commit('CATEGORY_ADD', this.category)
                     this.category = ''
                     this.$refs.category.focus()
                 }
